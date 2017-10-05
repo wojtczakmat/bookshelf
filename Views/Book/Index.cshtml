@@ -1,0 +1,6 @@
+@model IEnumerable<bookshelf.Models.Book>
+<h2>Book list</h2>
+@foreach (var book in Model)
+{
+    <p>@book.Title, @book.Author</p>
+}
